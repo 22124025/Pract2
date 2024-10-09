@@ -3,60 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>4x4 Table</title>
+    <title>Professional Form with Multiple Input Fields</title>
     <style>
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-        table, th, td {
-            border: 1px solid black;
-        }
-        th, td {
-            padding: 8px;
-            text-align: center;
-        }
-        th {
-            background-color: #f2f2f2;
-        }
+        /* Add your custom CSS styles here if needed */
     </style>
 </head>
 <body>
-    <table>
-        <thead>
-            <tr>
-                <th>REG NO</th>
-                <th>NAME</th>
-                <th>DEPT</th>
-                <th>SUBJECT</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>001</td>
-                <td>RAVI</td>
-                <td>B.E</td>
-                <td>TAMIL</td>
-            </tr>
-            <tr>
-                <td>002</td>
-                <td>MANI</td>
-                <td>B.ED</td>
-                <td>ENGLISH</td>
-            </tr>
-            <tr>
-                <td>003</td>
-                <td>GOPI/td>
-                <td>B.TECH</td>
-                <td>SCIENCE</td>
-            </tr>
-              <tr>
-                <td>004</td>
-                <td>RAM</td>
-                <td>B.SC</td>
-                <td>MATHS</td>
-            </tr>
-        </tbody>
-    </table>
+    <form>
+        <!-- Text input fields -->
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" name="fname"><br>
+
+        <label for="lname">Last Name:</label>
+        <input type="text" id="lname" name="lname"><br>
+
+        <!-- Email input field -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br>
+
+        <!-- Password input field -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password"><br>
+
+        <!-- Radio buttons -->
+        <p>Gender:</p>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br>
+
+        <!-- Checkbox -->
+        <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+        <label for="subscribe">Subscribe to newsletter</label><br>
+
+        <!-- Submit button -->
+        <input type="submit" value="Submit">
+    </form>
 </body>
 </html>
